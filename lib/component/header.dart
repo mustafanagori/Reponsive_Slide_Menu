@@ -9,12 +9,10 @@ class Header extends StatelessWidget {
     var h = MediaQuery.of(context).size.height;
     var w = MediaQuery.of(context).size.width;
     return Container(
-      color: const Color.fromARGB(255, 153, 183, 207),
+      color: Colors.black54,
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          SizedBox(
-            width: w * 0.01,
-          ),
           if (Responsive.isMobile(context))
             IconButton(
               onPressed: () {
@@ -25,26 +23,20 @@ class Header extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-          SizedBox(
-            width: w * 0.01,
-          ),
           const Text(
-            "Search",
+            "Dashboard",
             style: TextStyle(color: Colors.white),
           ),
-          SizedBox(
-            width: w * 0.02,
-          ),
           Container(
-            height: h * 0.032, // Adjust the height as needed
-            width: w * 0.30, // Adjust the width as needed
+            height: h * 0.034, // Adjust the height as needed
+            width: w * 0.34, // Adjust the width as needed
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(5),
-              color: Colors.grey[600],
+              color: Colors.black12,
             ),
             child: const TextField(
               cursorWidth: 1,
-              cursorColor: Colors.black26,
+              cursorColor: Colors.black12,
               decoration: InputDecoration(
                 border: InputBorder.none,
                 hintText: "Search",
@@ -57,9 +49,6 @@ class Header extends StatelessWidget {
                 ),
               ),
             ),
-          ),
-          SizedBox(
-            width: w * 0.01,
           ),
         ],
       ),
