@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   sizer: ^2.0.15
   auto_size_text: ^3.0.0
+  flutter_screenutil: ^5.9.0
+  basic_utils: ^5.6.1
 
 dev_dependencies:
   flutter_test:
